@@ -58,9 +58,7 @@
         <input type="password" id="password" placeholder="Password" required>
         <button onclick="register()">Register</button>
     </div>
-    <div>
-    <p><a href="WelcomePage.html">Go to Register Page</a></p>
-    </div>
+    
     <div id="message"></div>
 
     <script>
@@ -81,7 +79,7 @@
             localStorage.setItem('password', password);
 
             alert("Registration successful! Redirecting to welcome page...");
-            window.location.href = "WelcomePage.html";
+            window.location.href = "index.html";
         }
     </script>
 </body>
