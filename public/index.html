@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 50vh;
+            margin: 0;
+            padding: 10px;
+            background-color: #f0f0f0; /* Page background color */
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: left;
+            margin-top: 10px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+        button {
+            padding: 20px 40px;
+            background-color: #f0f0f0; /* Initial button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition for color change */
+        }
+        button:hover {
+            background-color: #f0f0f0; /* Hover effect before clicking */
+        }
+        #hint {
+            display: none;
+            text-align: center;
+            color: #ff0000;
+            margin-top: 20px;
+        }
+        a {
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World, it is my first JS Program</h1>
+
+    <h2>Welcome to Welcome Page</h2>
+
+    <p>Help Donald Trump recover his password. The username is not hard to get, 
+        but the password may need to try several times. </p>
+        <p>To proceed to the login page, you need to download the class file on GitHub page.</p>
+    <p>The command is helpful for you to enter the login page of the system:
+        <code>java LoginPage</code></p>
+    
+    <div id="hint">Please use SHA384. Your password length = 5 consecutive letters + X.</div>
+    <div class="button-container">
+        <button id="hintButton" onclick="showHint()"></button>
+    </div>
+    <a href="RegisterPage.html">Go to Register Page</a>
+    <div>
+        <p>
+    <a href="https://github.com/Mike20227906/LoginSystem.git">Go to GitHub Page</a>
+    </p>
+    </div>
+</div>
+    <script>
+        function showHint() {
+            // Show the hint
+            document.getElementById('hint').style.display = 'block';
+            
+            // Change the button's background color to match the page's background
+            const button = document.getElementById('hintButton');
+            button.style.backgroundColor = '#f0f0f0'; // Matches the body background color
+        }
+    </script>
+</body>
+</html>
